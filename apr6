@@ -1,0 +1,16 @@
+Write a function to split a string and convert it into an array of words.
+Examples (Input -> Output):
+
+* "Robin Singh" ==> ["Robin", "Singh"]
+
+* "I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
+
+
+function stringToArray(string){
+  return string.split(' ')
+}
+
+
+//.split('') turns a string into an array, if you use quotes with no space, it'll
+//return array with every letter being an element, the space is needed btwn the quotes
+// so each word could be an element of the array
