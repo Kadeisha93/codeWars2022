@@ -6,22 +6,40 @@
 // your pokemon would need to evolve (rare candies increase your level by one). 
 // Finally, create a fourth variable named totalCandies that sums all the rare candies you would need. 
 
-let bulbasaur= 16
-let caterpie= 7
-let weedle= 7
-let totalCandies= 
+let bulbasaurCandies = 16-5
+let caterpieCandies= 7-1
+let weedleCandies= 7-1
+let totalCandies= bulbasaurCandies + caterpieCandies + weedleCandies
+console.log(totalCandies)
 
 //Conditionals And Functions
 //You have a charmander in your party. Charmander can only battle if the temperature is above 0 degrees celcius. 
 //Create one function that converts a Fahrenheit value to Celcius and another fuction that tells you wheither or not charmander can battle
 
+function farenToCelc(temperature){
+    let convertToCel= (temperature -32) * 5/9
+    return convertToCel
+}
+
+function canCharBattle(currentTemp){
+    let converted = farenToCelc(currentTemp)
+    if (converted > 0){
+        console.log('Charmander can battle')
+    }else{
+        console.log('Charmander cannot battle')
+    }
+    
+}
+canCharBattle(33)
+
 //Loops
 //You have joined an undeground pokemon leauge. In this league, trainers can use any number of pokemon. 
 //Print to the console "Pikachu I choose you" x times where x is the number of pokemon the trainer you are battling has in their party
 
-function catchEmAll(){
-    for (i = 0; i <= ; i++){
-        
+function undergroundPokemon(partySize){
+    for(let i = 1; i <= partySize; i++){
+        console.log('Pikachu I choose you')
     }
 
 }
+undergroundPokemon(5) //prints 'pika i choose you 5x to console
